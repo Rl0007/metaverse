@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.homepage {
+  height: 100vh;
+}
+.banner_image {
+  /* margin: 0px;
+  padding: 0px;
+  max-width: 100vw;
+  max-height: 50vh;
+  background-size: cover; */
+
+  max-height: 65vh;
+  width: 100%;
+  /* height: 65%; */
+
+  /* background-size: cover; */
+  object-fit: cover;
+  object-position: top;
+  /* background-position: center; */
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  /* z-index: -1; */
+}
+.banner_text_logo {
+  position: relative;
+  /* z-index: -1; */
+}
+.product_row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}

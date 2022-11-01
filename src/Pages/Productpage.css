@@ -1,0 +1,22 @@
+.product_page {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.button_bar {
+  align-self: center;
+  margin: 1rem;
+}
+.size_button {
+  color: black;
+  background-color: peachpuff;
+}
+.add_to_cart {
+  position: fixed;
+  bottom: 0px;
+
+  width: 100vw;
+}
+.back_arrow {
+  position: absolute;
+}

@@ -1,0 +1,14 @@
+.aboutus_banner {
+  max-width: 100%;
+  height: auto;
+}
+
+.about_company_text {
+  padding: 1rem;
+}
+.about_person_text {
+  padding: 1rem;
+}
+.people h3 {
+  text-align: center;
+}
