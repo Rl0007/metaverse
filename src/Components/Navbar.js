@@ -19,7 +19,7 @@ export const Navbar_component = () => {
   let url_path = location.pathname;
   const [expanded, setExpanded] = useState(false);
   const [{ basket }, dispatch] = useStateValue();
-  let { user, logoutUser } = useContext(AuthContext);
+  let { user, user_details, logoutUser } = useContext(AuthContext);
 
   if (url_path === "/signup" || url_path === "/login") {
     return <div></div>;
@@ -46,7 +46,7 @@ export const Navbar_component = () => {
           <div className="user_and_cart_icon">
             <p className="nav_username">
               {" "}
-              hello {user === null ? "user" : user.username}{" "}
+              hello {user === null ? "user" : user_details?.name}{" "}
             </p>
             <div
               className="cart_icon_and_item"

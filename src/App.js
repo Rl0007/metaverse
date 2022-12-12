@@ -14,6 +14,7 @@ import Testpage2 from "./Pages/Testpage2";
 import Payment from "./Pages/Payment";
 import ProtectedRoutes, { Check_Signup } from "./Components/ProtectedRoutes";
 import { AuthProvider } from "./AuthContext";
+import Activate_account_component from "./Components/Activate_account_component";
 
 function App() {
   return (
@@ -34,7 +35,9 @@ function App() {
             <Route path="/signup" element={<Signup_page />} />
             <Route path="/login" element={<Signup_page />} />
           </Route>
+          <Route path="/send_reset_password_link" element={<Signup_page />} />
           <Route path="/test" element={<Testpage />} />
+          <Route path="/activate/:uid/:token" element={<Signup_page />} />
 
           {/* <Route path="/test2" element={<Testpage2 />} /> */}
         </Routes>

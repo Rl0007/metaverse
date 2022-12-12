@@ -5,6 +5,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
 import AuthContext from "../AuthContext";
+import { Link } from "react-router-dom";
 function Login_component() {
   const navigate = useNavigate();
   let { loginUser } = useContext(AuthContext);
@@ -60,7 +61,15 @@ function Login_component() {
             sign up
           </Button>
         </Form>
-        {/* <p class="mt-5 mb-3 text-muted">© 2022–2023</p> */}
+        <p className="mt-5 mb-3 " style={{ color: "white" }}>
+          Forgot Password ?{" "}
+          <Link
+            to="/send_reset_password_link"
+            style={{ color: "black", textDecoration: "None" }}
+          >
+            Reset Password
+          </Link>
+        </p>
       </div>
     </div>
   );

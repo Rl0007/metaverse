@@ -7,14 +7,37 @@ import Login_component from "../Components/Login_component";
 
 import meta_logo from "./meta_logo_3.png";
 import "./Signup_page.css";
+import Reset_password_email from "../Components/Reset_password_email";
+import Activate_account_component from "../Components/Activate_account_component";
 // import "./Testpage2.css";
 function Signup_page() {
   const navigate = useNavigate();
   const location = useLocation();
   let url_path = location.pathname;
+  if (url_path.startsWith("/activate")) {
+    url_path = "/activate";
+  }
+  // if(url_path==='send_reset_password_link'){
+  //   return(
+
+  //   )
+  // }
+  const renderSwitch = (param) => {
+    switch (param) {
+      case "/signup":
+        return <Signup_component />;
+      case "/login":
+        return <Login_component />;
+      case "/send_reset_password_link":
+        return <Reset_password_email />;
+      case "/activate":
+        return <Activate_account_component />;
+    }
+  };
   return (
     <>
       <div className="header">
+        {console.log(url_path)}
         <div className="inner-header flex">
           <div className="Signup_page">
             {/* <div className="signup_form_container">
@@ -49,11 +72,13 @@ function Signup_page() {
               </Form>
                <p class="mt-5 mb-3 text-muted">© 2022–2023</p> 
             </div> */}
-            {url_path === "/signup" ? (
+
+            {renderSwitch(url_path)}
+            {/* {url_path === "/signup" ? (
               <Signup_component />
             ) : (
               <Login_component />
-            )}
+            )} */}
           </div>
         </div>
 
