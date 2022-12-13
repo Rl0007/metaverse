@@ -41,7 +41,7 @@ export const Navbar_component = () => {
               navigate("/");
             }}
           >
-            Metaverse
+            test
           </p>
           <div className="user_and_cart_icon">
             <p className="nav_username">
