@@ -126,6 +126,15 @@ export const Navbar_component = () => {
 
               <Nav.Link
                 onClick={() => {
+                  navigate("/upload");
+                  setExpanded(false);
+                }}
+              >
+                Upload
+              </Nav.Link>
+
+              <Nav.Link
+                onClick={() => {
                   navigate("/about");
                   setExpanded(false);
                 }}

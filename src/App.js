@@ -9,6 +9,7 @@ import Signup_page from "./Pages/Signup_page";
 import Aboutus from "./Pages/Aboutus";
 import Checkout from "./Pages/Checkout";
 import Testpage from "./Pages/Testpage";
+import Uploadpage from "./Pages/Uploadpage";
 
 import Testpage2 from "./Pages/Testpage2";
 import Payment from "./Pages/Payment";
@@ -37,6 +38,7 @@ function App() {
           </Route>
           <Route path="/send_reset_password_link" element={<Signup_page />} />
           <Route path="/test" element={<Testpage />} />
+          <Route path="/upload" element={<Uploadpage />} />
           <Route path="/activate/:uid/:token" element={<Signup_page />} />
 
           {/* <Route path="/test2" element={<Testpage2 />} /> */}
