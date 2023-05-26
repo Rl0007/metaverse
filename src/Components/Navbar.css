@@ -3,43 +3,55 @@
   padding: 0px;
 }
 .navbar_bg {
-  background-color: magenta;
+  /* color: #ffffff; */
+  background-color: #0a0a0a;
+  border-bottom: 10px solid #ffffff;
+  /* padding-bottom: 3px; */
+  /* margin-top: 1px; */
 }
 
 .search_bar {
   margin-top: 0.5rem;
-  /* flex: 1; */
 }
 .nav_title_items {
   display: flex;
-  /* background-color: aliceblue; */
   flex: 1;
+  /* color: #ffffff; */
   align-items: center;
 }
-.nav_title {
-  /* padding-right: 0.2rem; */
+.nav_title,
+.offcanvas_title {
   flex: 0.8;
   font-weight: 700;
   font-size: large;
+  color: #ffffff;
   margin: 0px;
   padding: 0px;
 }
+.nav-link {
+  color: white !important;
+}
+
 .nav_username {
   padding-left: 0.2rem;
   font-size: medium;
   margin: 0px;
   padding: 0px;
+  color: #ffffff;
   flex: 1;
 }
-
+.nav_toggle {
+  background-color: aqua;
+  color: white;
+}
 .user_and_cart_icon {
   display: flex;
+  color: #ffffff;
   flex: 0.5;
   align-items: center;
 }
 .cart_icon_and_item {
   display: flex;
-  /* background-color: purple; */
 
   align-items: center;
 }

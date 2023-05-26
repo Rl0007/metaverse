@@ -28,10 +28,11 @@ export const Navbar_component = () => {
     <Navbar
       key={expand}
       // bg="light"
+      fixed="top"
       expand={expand}
       expanded={expanded}
       className=" navbar_bg"
-      style={{ backgroundColor: "#e16680" }}
+      // style={{ backgroundColor: "#686963", opacity: "0.1" }}
     >
       <Container fluid>
         <Navbar.Brand href="#" className="nav_title_items">
@@ -41,7 +42,7 @@ export const Navbar_component = () => {
               navigate("/");
             }}
           >
-            Metaverse this is test
+            Metaverse
           </p>
           <div className="user_and_cart_icon">
             <p className="nav_username">
@@ -61,15 +62,18 @@ export const Navbar_component = () => {
         </Navbar.Brand>
 
         <Navbar.Toggle
+          className="nav_toggle"
+          style={{ color: "#ffffff", backgroundColor: "#ffffff" }}
           onClick={() => setExpanded(expanded ? false : "expanded")}
           aria-controls={`offcanvasNavbar-expand-${expand}`}
         />
 
         <Navbar.Offcanvas
+          className="nav_offcanvas"
           id={`offcanvasNavbar-expand-${expand}`}
           aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
           placement="end"
-          style={{ backgroundColor: "#d9abb5" }}
+          style={{ backgroundColor: "#0a0a0a", color: "#ffffff" }}
         >
           <Offcanvas.Header
             onClick={() => {
@@ -77,12 +81,17 @@ export const Navbar_component = () => {
             }}
             closeButton
           >
-            <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+            <Offcanvas.Title
+              id={`offcanvasNavbarLabel-expand-${expand}`}
+              className="offcanvas_title"
+            >
               Metaverse
             </Offcanvas.Title>
           </Offcanvas.Header>
-          <Offcanvas.Body>
-            <Nav className="justify-content-center flex-grow-1 pe-3">
+          <Offcanvas.Body
+          // style={{ color: "#ffffff" }}
+          >
+            <Nav className="justify-content-center flex-grow-1 pe-3 ">
               <Nav.Link
                 onClick={() => {
                   navigate("/");

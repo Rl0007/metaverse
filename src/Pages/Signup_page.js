@@ -36,50 +36,10 @@ function Signup_page() {
   };
   return (
     <>
-      <div className="header">
+      <div className="topsvg">
         {console.log(url_path)}
         <div className="inner-header flex">
-          <div className="Signup_page">
-            {/* <div className="signup_form_container">
-              <img
-                src={meta_logo}
-                className="meta_logo"
-                onClick={() => {
-                  navigate("/");
-                }}
-                alt=""
-              />
-      
-              <h1 className="sign_up">Please sign up</h1>
-              <Form>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Control type="email" placeholder="Enter email" />
-                </Form.Group>
-
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                  <Form.Control type="password" placeholder="Password" />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                  <Form.Control
-                    type="password"
-                    placeholder="Confirm Password"
-                  />
-                </Form.Group>
-
-                <Button variant="primary" type="submit">
-                  Submit
-                </Button>
-              </Form>
-               <p class="mt-5 mb-3 text-muted">© 2022–2023</p> 
-            </div> */}
-
-            {renderSwitch(url_path)}
-            {/* {url_path === "/signup" ? (
-              <Signup_component />
-            ) : (
-              <Login_component />
-            )} */}
-          </div>
+          <div className="Signup_page">{renderSwitch(url_path)}</div>
         </div>
 
         <div>

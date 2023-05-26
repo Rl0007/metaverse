@@ -10,6 +10,7 @@ function Product_card({
   product_name,
   product_creator,
   product_price,
+  small,
 }) {
   const navigate = useNavigate();
   const [{ basket }, dispatch] = useStateValue();
@@ -38,7 +39,10 @@ function Product_card({
     });
   };
   return (
-    <div className="product_container">
+    <div
+      className="product_container"
+      style={{ width: small == "small" ? "20vw" : "48vw" }}
+    >
       {/* <Link
         to={{
           pathname: "/product",

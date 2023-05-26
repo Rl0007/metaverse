@@ -29,7 +29,7 @@ function Login_component() {
         >
           Metaverse
         </p> */}
-        <h1 className="login">Please login</h1>
+        <h1 className="login">Login</h1>
         <Form onSubmit={loginUser}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Control

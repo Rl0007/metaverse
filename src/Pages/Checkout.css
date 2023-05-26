@@ -5,6 +5,7 @@
   position: relative;
   max-width: 400px;
   margin: auto;
+  padding-top: 7vh;
 }
 .cart_heading:before {
   content: " ";
@@ -12,9 +13,10 @@
   height: 2px;
   width: 100px;
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 0;
-  background: red;
+  background: #0a0a0a;
+  /* padding-top: 10vh; */
 }
 .cart_heading:after {
   content: " ";
@@ -22,9 +24,9 @@
   height: 2px;
   width: 100px;
   position: absolute;
-  top: 50%;
+  top: 80%;
   right: 0;
-  background: red;
+  background: #0a0a0a;
 }
 .proceed_button {
   display: flex;
