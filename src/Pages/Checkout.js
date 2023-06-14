@@ -5,25 +5,17 @@ import Button from "react-bootstrap/Button";
 import "./Checkout.css";
 import { useStateValue } from "../StateProvider";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
+
 function Checkout() {
   const [{ basket }, dispatch] = useStateValue();
   const [totalprice, settotalprice] = useState(0);
   const navigate = useNavigate();
-  // useEffect(
-  //   // basket.forEach((element) => {
-  //   //   totalprice += Number(element.product_price);
-  //   // })
-  //   console.log(basket)
-  //   // [basket]
-  // );
-  // function calculate(item) {
-  //   console.log("this is item ", item.product_price);
-  //   settotalprice(totalprice + Number(item.product_price));
-  //   console.log(totalprice);
-  // }
+
   let price_of_basket = 0;
   Object.entries(basket).map((item) => {
-    price_of_basket += parseFloat(item[1].product_price);
+    price_of_basket +=
+      parseFloat(item[1].product_price) * parseFloat(item[1].product_qty);
     // console.log(price_of_basket);
     // console.log(item[1].price);
   });
@@ -52,6 +44,7 @@ function Checkout() {
           product_creator={item.product_creator}
           product_price={item.product_price}
           product_name={item.product_name}
+          product_qty={item.product_qty}
         />
       ))}
 
@@ -71,12 +64,15 @@ function Checkout() {
           <p>₹ {price_of_basket}</p>
         </div>
       </div>
+
       <div className="proceed_button">
         <Button
           variant="warning "
           className="proceed_to_pay"
           onClick={() => {
-            navigate("/payment");
+            navigate("/Payment_Page", {
+              state: { id: 1, price: price_of_basket },
+            });
           }}
         >
           Proceed to pay

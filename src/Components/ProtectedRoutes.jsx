@@ -4,6 +4,7 @@ import AuthContext from "../AuthContext";
 
 function ProtectedRoutes() {
   const { user } = useContext(AuthContext);
+  console.log(user);
   return user ? <Outlet /> : <Navigate to={"/signup"} />;
 }
 export const Check_Signup = () => {

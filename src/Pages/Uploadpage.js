@@ -11,14 +11,13 @@ function Uploadpage() {
   const navigate = useNavigate();
   const [file, setFile] = useState();
   function handleChange(e) {
-    console.log(e.target.files);
     setFile(URL.createObjectURL(e.target.files[0]));
   }
 
   return (
-    <div className="App">
+    <div className="container">
       <h2>Add product </h2>
-      <input type="file" onChange={handleChange} />
+      <input type="file" onChange={handleChange} className="choose_file" />
       <img src={file} />
 
       <Form>
@@ -26,8 +25,9 @@ function Uploadpage() {
           <Form.Control
             type="text"
             name="name"
-            placeholder=" product name"
+            placeholder=" Product name"
             required
+            style={{ marginTop: "1rem" }}
           />
         </Form.Group>
 
@@ -48,26 +48,26 @@ function Uploadpage() {
           />
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicDiscountPrice">
+        {/* <Form.Group className="mb-3" controlId="formBasicDiscountPrice">
           <Form.Control
             type="discountprice"
             name="discountprice"
             placeholder="DiscountPrice"
             required
           />
-        </Form.Group>
+        </Form.Group> */}
 
         <Form.Group className="mb-3" controlId="formBasicProductunit">
           <Form.Control
             type="productunit"
-            name="productunit"
-            placeholder="Productunit"
+            name="Productunit"
+            placeholder="Product unit"
             required
           />
         </Form.Group>
 
         <Form.Select piece="lg">
-          <option>piece</option>
+          <option>Piece</option>
           <option>1</option>
           <option>2</option>
           <option>3</option>

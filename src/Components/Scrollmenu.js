@@ -27,7 +27,7 @@ function Scrollmenu({ products }) {
   return (
     <div
       className="Scrollmenu"
-      style={{ overflow: "auto", whiteSpace: "nowrap" }}
+      // style={{ overflow: "scroll", whiteSpace: "nowrap" }}
     >
       {results}
     </div>

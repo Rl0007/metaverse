@@ -20,7 +20,7 @@ export const AuthProvider = ({ children }) => {
   const [user_details, setuser_details] = useState(null);
   const get_user_details = async () => {
     if (authTokens) {
-      let response = await fetch("http://127.0.0.1:8000/auth/users/me", {
+      let response = await fetch("http://127.0.0.1:8000/auth/users/me/", {
         headers: {
           "Content-Type": "application/json",
           Authorization: `JWT ${authTokens?.access}`,
@@ -57,7 +57,9 @@ export const AuthProvider = ({ children }) => {
         localStorage.setItem("authTokens", JSON.stringify(data));
         navigate("/");
       } else {
-        alert("Something went wrong!!!");
+        if (response.status === 401) {
+          alert("No account found!!!");
+        }
       }
     } catch (error) {
       console.log(error);

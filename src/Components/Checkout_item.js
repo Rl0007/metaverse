@@ -12,8 +12,9 @@ function Checkout_item({
   product_creator,
   product_price,
   product_name,
+  product_qty,
 }) {
-  const [qty, setqty] = useState(1);
+  const [qty, setqty] = useState(product_qty ?? 1);
   const [{ basket }, dispatch] = useStateValue();
 
   const remove_from_basket = () => {
@@ -25,6 +26,7 @@ function Checkout_item({
         product_creator: product_creator,
         product_price: product_price,
         product_name: product_name,
+        product_qty: product_qty,
       },
     });
   };
@@ -33,7 +35,7 @@ function Checkout_item({
       <div className="checkout_item">
         <div className="photo_and_quantity">
           <img src={product_image} alt="" className="product_photo" />
-          <div className="input_quantity">
+          {/* <div className="input_quantity">
             <InputGroup className="mb-3">
               <Button
                 variant="outline-secondary"
@@ -69,13 +71,15 @@ function Checkout_item({
                 +
               </Button>
             </InputGroup>
-          </div>
+          </div> */}
         </div>
         <div className="product_info">
           <div className="product_name">{product_name}</div>
           <div className="product_creator">@ {product_creator}</div>
 
-          <div className="product_price">₹ {product_price}</div>
+          <div className="product_price">
+            ₹ {product_price} * {product_qty} = {product_price * product_qty}
+          </div>
         </div>
         <div className="remove_button_container">
           <CancelOutlinedIcon

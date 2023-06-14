@@ -16,6 +16,7 @@ import Payment from "./Pages/Payment";
 import ProtectedRoutes, { Check_Signup } from "./Components/ProtectedRoutes";
 import { AuthProvider } from "./AuthContext";
 import Activate_account_component from "./Components/Activate_account_component";
+import Payment_Page from "./Pages/Payment_Page";
 
 function App() {
   return (
@@ -28,9 +29,10 @@ function App() {
           <Route path="/product" element={<Productpage />} />
           <Route path="/about" element={<Aboutus />} />
           <Route path="/checkout" element={<Checkout />} />
-
           <Route element={<ProtectedRoutes />}>
-            <Route path="/payment" element={<Payment />} />
+            <Route path="/Payment_page" element={<Payment_Page />} />
+
+            {/* <Route path="/payment" element={<Payment />} /> */}
           </Route>
           <Route element={<Check_Signup />}>
             <Route path="/signup" element={<Signup_page />} />

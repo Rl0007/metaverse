@@ -35,6 +35,7 @@ function Product_card({
         product_creator: product_creator,
         product_price: product_price,
         product_name: product_name,
+        product_qty: 1,
       },
     });
   };
@@ -51,7 +52,7 @@ function Product_card({
           product_price: product_price,
           product_name: product_name,
         }}
-      > */}
+      ></Link> */}
       <img
         src={image}
         className="product_image"

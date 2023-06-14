@@ -4,6 +4,7 @@
   padding-left: 1rem;
   padding-right: 1rem;
   display: flex;
+  /* margin-left: 10% ; */
   /* background-color: red; */
 }
 .photo_and_quantity {
@@ -15,18 +16,6 @@
   width: 20vw;
   height: auto;
   object-fit: contain;
-}
-.input_quantity {
-  display: flex;
-}
-.quantity_button {
-  margin: 0px;
-  /* padding: 0.5rem; */
-  border-radius: 50%;
-  height: fit-content;
-}
-.quantity_number {
-  max-width: 2.1rem;
 }
 
 .product_info {

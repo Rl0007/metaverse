@@ -27,12 +27,9 @@ export const Navbar_component = () => {
   return (
     <Navbar
       key={expand}
-      // bg="light"
-      fixed="top"
       expand={expand}
       expanded={expanded}
       className=" navbar_bg"
-      // style={{ backgroundColor: "#686963", opacity: "0.1" }}
     >
       <Container fluid>
         <Navbar.Brand href="#" className="nav_title_items">

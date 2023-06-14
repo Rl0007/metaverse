@@ -10,23 +10,23 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
-# 12rahulagrawalpython@gmail.com
-# Python@123
-# app password idkaqfelrymqqakm
+
 
 from pathlib import Path
 from datetime import timedelta
 from tkinter.tix import Tree
 import os
+from dotenv import load_dotenv
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv()
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure--unb8kru+j%aqkgmhw8(weki2=@fsy^ndnw&s$*39&do8fwfq$'
+SECRET_KEY = os.getenv("secret_key")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -117,8 +117,8 @@ DATABASES = {
 EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT=587
-EMAIL_HOST_USER= '12rahulagrawalpython@gmail.com'
-EMAIL_HOST_PASSWORD='idkaqfelrymqqakm'
+EMAIL_HOST_USER= os.getenv("email")
+EMAIL_HOST_PASSWORD=os.getenv("email_host_password")
 EMAIL_USE_TLS= True
 
 

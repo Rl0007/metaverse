@@ -20,10 +20,15 @@ function Activate_account_component() {
     switch (param) {
       case 204:
         return (
-          <div>
+          <div style={{ color: "white" }}>
             Your Account is activated{" "}
-            <p onClick={() => navigate("/login")}>Click here </p> to go to login
-            page !!!
+            <p
+              onClick={() => navigate("/login")}
+              style={{ color: "lightblue" }}
+            >
+              Click here{" "}
+            </p>{" "}
+            to go to login page !!!
           </div>
         );
       case 403:
