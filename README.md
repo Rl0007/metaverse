@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Metaverse
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Metaverse! This is a web application built with React and Django, designed for e-commerce purposes, specifically selling t-shirts. The project utilizes various technologies and libraries such as Python, JWT, Djoser, React Context API, and protected routes. Additionally, email authentication and verification are implemented for enhanced security.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Browse and purchase t-shirts from the extensive collection.
+- User authentication with email verification.
+- Seamless integration of React and Django frameworks.
+- Python JWT and Djoser for secure authentication and user management.
+- React Context API for efficient data sharing.
+- Protected routes to restrict access for unauthorized users.
 
-### `yarn start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React: A JavaScript library for building user interfaces.
+- Django: A high-level Python web framework for rapid development.
+- Python: A versatile programming language used for back-end development.
+- JWT (JSON Web Token): A standard for securely transmitting information between parties.
+- Djoser: A powerful library for user authentication in Django projects.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demo
 
-### `yarn test`
+![Homepage](https://github.com/Rl0007/metaverse/blob/master/results/Homepage.JPG)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Homepage
 
-### `yarn build`
+![About us](https://github.com/Rl0007/metaverse/blob/master/results/about_us.JPG)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+About us
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![basket](https://github.com/Rl0007/metaverse/blob/master/results/basket.JPG)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Basket
 
-### `yarn eject`
+![categories](https://github.com/Rl0007/metaverse/blob/master/results/categories.JPG)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+categories
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![login](https://github.com/Rl0007/metaverse/blob/master/results/login.JPG)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Login
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Payment](https://github.com/Rl0007/metaverse/blob/master/results/payment.JPG)
 
-## Learn More
+Payment 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Product Page](https://github.com/Rl0007/metaverse/blob/master/results/product_page.JPG)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Product Page
 
-### Code Splitting
+![Top picks](https://github.com/Rl0007/metaverse/blob/master/results/top_picks.JPG)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Top Picks
 
-### Analyzing the Bundle Size
+## Setup Instructions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Clone the repository: `git clone https://github.com/your-username/metaverse.git`
+2. Navigate to the project directory: `cd metaverse`
+3. Install the necessary dependencies:
+   - For the React front-end, run `npm install`.
+   - For the Django back-end, set up a virtual environment and install the requirements from `requirements.txt`.
+4. Configure the project settings:
+   - Set up the database connection in the Django settings file.
+   - Configure email settings for authentication and verification.
+5. Run the application:
+   - For the React front-end, run `npm start`.
+   - For the Django back-end, run `python manage.py runserver`.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
