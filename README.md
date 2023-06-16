@@ -23,6 +23,7 @@ Welcome to Metaverse! This is a web application built with React and Django, des
 
 ### Homepage
 <img src="https://github.com/Rl0007/metaverse/blob/master/results/Homepage.JPG" alt="homepage">
+
 ![Homepage](https://github.com/Rl0007/metaverse/blob/master/results/Homepage.JPG)
 
 ### Top Picks
