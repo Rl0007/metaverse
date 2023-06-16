@@ -1,3 +1,4 @@
+# Note :-  If you are using Jio (either sim or Jiofiber)  as your ISP either use a vpn or change your ISP as photos are not rendering in Jio network it is a known issue .
 # Metaverse
 
 Welcome to Metaverse! This is a web application built with React and Django, designed for e-commerce purposes, specifically selling t-shirts. The project utilizes various technologies and libraries such as Python, JWT, Djoser, React Context API, and protected routes. Additionally, email authentication and verification are implemented for enhanced security.
@@ -22,7 +23,6 @@ Welcome to Metaverse! This is a web application built with React and Django, des
 ## Demo
 
 ### Homepage
-<img src="https://github.com/Rl0007/metaverse/blob/master/results/Homepage.JPG" alt="homepage">
 
 ![Homepage](https://github.com/Rl0007/metaverse/blob/master/results/Homepage.JPG)
 
