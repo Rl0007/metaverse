@@ -57,7 +57,7 @@ Welcome to Metaverse! This is a web application built with React and Django, des
 
 ## Setup Instructions
 
-1. Clone the repository: `git clone https://github.com/your-username/metaverse.git`
+1. Clone the repository: `git clone git@github.com/Rl0007/metaverse.git`
 2. Navigate to the project directory: `cd metaverse`
 3. Install the necessary dependencies:
    - For the React front-end, run `yarn`.
