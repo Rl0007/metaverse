@@ -21,50 +21,52 @@ Welcome to Metaverse! This is a web application built with React and Django, des
 
 ## Demo
 
+### Homepage
+
 ![Homepage](https://github.com/Rl0007/metaverse/blob/master/results/Homepage.JPG)
 
-Homepage
-
-![About us](https://github.com/Rl0007/metaverse/blob/master/results/about_us.JPG)
-
-About us
-
-![basket](https://github.com/Rl0007/metaverse/blob/master/results/basket.JPG)
-
-Basket
-
-![categories](https://github.com/Rl0007/metaverse/blob/master/results/categories.JPG)
-
-categories
-
-![login](https://github.com/Rl0007/metaverse/blob/master/results/login.JPG)
-
-Login
-
-![Payment](https://github.com/Rl0007/metaverse/blob/master/results/payment.JPG)
-
-Payment 
-
-![Product Page](https://github.com/Rl0007/metaverse/blob/master/results/product_page.JPG)
-
-Product Page
+### Top Picks
 
 ![Top picks](https://github.com/Rl0007/metaverse/blob/master/results/top_picks.JPG)
 
-Top Picks
+### Product Page
+
+![Product Page](https://github.com/Rl0007/metaverse/blob/master/results/product_page.JPG)
+
+### Basket
+
+![basket](https://github.com/Rl0007/metaverse/blob/master/results/basket.JPG)
+
+### Payment 
+
+![Payment](https://github.com/Rl0007/metaverse/blob/master/results/payment.JPG)
+
+### categories
+
+![categories](https://github.com/Rl0007/metaverse/blob/master/results/categories.JPG)
+
+### Login
+
+![login](https://github.com/Rl0007/metaverse/blob/master/results/login.JPG)
+
+### About us
+
+![About us](https://github.com/Rl0007/metaverse/blob/master/results/about_us.JPG)
+
+
 
 ## Setup Instructions
 
 1. Clone the repository: `git clone https://github.com/your-username/metaverse.git`
 2. Navigate to the project directory: `cd metaverse`
 3. Install the necessary dependencies:
-   - For the React front-end, run `npm install`.
+   - For the React front-end, run `yarn`.
    - For the Django back-end, set up a virtual environment and install the requirements from `requirements.txt`.
 4. Configure the project settings:
    - Set up the database connection in the Django settings file.
    - Configure email settings for authentication and verification.
 5. Run the application:
-   - For the React front-end, run `npm start`.
+   - For the React front-end, run `yarn start`.
    - For the Django back-end, run `python manage.py runserver`.
 
 
