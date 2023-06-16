@@ -1,0 +1,3 @@
+email="your email for sending verification links"
+secret_key="your django app secret key"
+email_host_password="App password for gmail that you chose when you use it for djoser"
